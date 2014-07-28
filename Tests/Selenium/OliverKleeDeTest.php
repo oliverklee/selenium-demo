@@ -75,7 +75,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 		$this->byId('user')->value('klee');
 		$this->byId('pass')->value('12345678');
 
-		$this->byName('submit')->click();
+		$this->byCssSelector('input[value="Login"]')->click();
 
 		$this->assertSame(
 			'Login successful',
@@ -89,7 +89,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 	public function loginAndLogout() {
 		$this->login();
 		$this->url('http://typo3master.local/index.php?id=13');
-		$this->byName('submit')->click();
+		$this->byCssSelector('input[value="Logout"]')->click();
 
 		$this->assertSame(
 			'You have logged out.',
