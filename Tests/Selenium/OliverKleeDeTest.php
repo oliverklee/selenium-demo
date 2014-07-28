@@ -79,7 +79,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 
 		$this->assertSame(
 			'Login successful',
-			$this->byXPath('//*[@id="c3"]/div/h3')->text()
+			$this->byCssSelector('#c3 > div > h3')->text()
 		);
 	}
 }
