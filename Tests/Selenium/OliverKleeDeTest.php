@@ -6,7 +6,7 @@ namespace OliverKleeDe\SeleniumDemo\Tests\Selenium;
  *
  * @author Oliver Klee <typo3-coding@oliverklee.de>
  */
-class OliverKleeDeTest extends \PHPUnit_Extensions_Selenium2TestCase {
+class OliverKleeDeTest extends AbstractSeleniumTestcase {
 	protected function setUp() {
 		$this->setBrowser('firefox');
 		$this->setBrowserUrl('http://www.oliverklee.de/');
