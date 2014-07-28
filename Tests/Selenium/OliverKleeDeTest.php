@@ -82,4 +82,18 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 			$this->byCssSelector('#c3 > div > h3')->text()
 		);
 	}
+
+	/**
+	 * @test
+	 */
+	public function loginAndLogout() {
+		$this->login();
+		$this->url('http://typo3master.local/index.php?id=13');
+		$this->byName('submit')->click();
+
+		$this->assertSame(
+			'You have logged out.',
+			$this->byCssSelector('#c3 > div > h3')->text()
+		);
+	}
 }
