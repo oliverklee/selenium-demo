@@ -62,38 +62,4 @@ class OliverKleeDeTest extends AbstractSelenium2Testcase {
 		$this->url('/startseite.html');
 		$this->byLinkText('Impressum')->click();
 	}
-
-	/**
-	 * @test
-	 *
-	 * In Selenium IDE ist das 2x type und 1x clickAndWait.
-	 *
-	 * type -> value
-	 */
-	public function login() {
-		$this->url('http://typo3master.local/index.php?id=13');
-		$this->byId('user')->value('klee');
-		$this->byId('pass')->value('12345678');
-
-		$this->byCssSelector('input[value="Login"]')->click();
-
-		self::assertSame(
-			'Login successful',
-			$this->byCssSelector('#c3 > div > h3')->text()
-		);
-	}
-
-	/**
-	 * @test
-	 */
-	public function loginAndLogout() {
-		$this->login();
-		$this->url('http://typo3master.local/index.php?id=13');
-		$this->byCssSelector('input[value="Logout"]')->click();
-
-		self::assertSame(
-			'You have logged out.',
-			$this->byCssSelector('#c3 > div > h3')->text()
-		);
-	}
 }
