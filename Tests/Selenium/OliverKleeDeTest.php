@@ -17,7 +17,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 	 */
 	public function homepageHasHomePageTitle() {
 		$this->open();
-		$this->assertSame(
+		self::assertSame(
 			'Startseite - oliverklee.de',
 			$this->title()
 		);
@@ -45,7 +45,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 		$this->url('/startseite.html');
 		$element = $this->byCssSelector('#c1 > h1');
 
-		$this->assertSame(
+		self::assertSame(
 			'Dienstleistungen rund um Web-Entwicklung und Sicherheit sowie effektive Seminare, die Spaß machen',
 			$element->text()
 		);
@@ -77,7 +77,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 
 		$this->byCssSelector('input[value="Login"]')->click();
 
-		$this->assertSame(
+		self::assertSame(
 			'Login successful',
 			$this->byCssSelector('#c3 > div > h3')->text()
 		);
@@ -91,7 +91,7 @@ class OliverKleeDeTest extends AbstractSeleniumTestcase {
 		$this->url('http://typo3master.local/index.php?id=13');
 		$this->byCssSelector('input[value="Logout"]')->click();
 
-		$this->assertSame(
+		self::assertSame(
 			'You have logged out.',
 			$this->byCssSelector('#c3 > div > h3')->text()
 		);
