@@ -18,7 +18,7 @@ class OliverKleeDeTest extends AbstractSelenium2Testcase {
 	public function homepageHasHomePageTitle() {
 		$this->open();
 		self::assertSame(
-			'Startseite - oliverklee.de',
+			'Startseite - Oliver Klee [oliverklee.de]',
 			$this->title()
 		);
 	}
@@ -46,7 +46,7 @@ class OliverKleeDeTest extends AbstractSelenium2Testcase {
 		$element = $this->byCssSelector('#c1 > h1');
 
 		self::assertSame(
-			'Dienstleistungen rund um Web-Entwicklung und Sicherheit sowie effektive Seminare, die Spaß machen',
+			'Oliver Klee: Dienstleistungen rund um Web-Entwicklung und Sicherheit sowie effektive Seminare, die Spaß machen',
 			$element->text()
 		);
 	}
