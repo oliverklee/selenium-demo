@@ -6,7 +6,7 @@ namespace OliverKleeDe\SeleniumDemo\Tests\Selenium;
  *
  * @author Oliver Klee <typo3-coding@oliverklee.de>
  */
-abstract class AbstractSeleniumTestcase extends \PHPUnit_Extensions_Selenium2TestCase {
+abstract class AbstractSelenium2Testcase extends \PHPUnit_Extensions_Selenium2TestCase {
 	/**
 	 * Waits for an element with the ID $id to be present.
 	 *
