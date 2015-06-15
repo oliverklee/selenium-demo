@@ -1,7 +1,7 @@
 <?php
 namespace OliverKleeDe\SeleniumDemo\Tests\Selenium;
 
-use Facebook\WebDriver\Remote\WebDriverCapabilityType;
+use Facebook\WebDriver\Remote\DesiredCapabilities;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
 
 /**
@@ -17,8 +17,7 @@ class GitHubTest extends \PHPUnit_Framework_TestCase {
 	private $webDriver = NULL;
 
 	protected function setUp() {
-		$capabilities = array(WebDriverCapabilityType::BROWSER_NAME => 'firefox');
-		$this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $capabilities);
+		$this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', DesiredCapabilities::firefox());
 	}
 
 	protected function tearDown() {
