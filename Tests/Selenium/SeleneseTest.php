@@ -15,7 +15,7 @@ class SeleneseTest extends \PHPUnit_Extensions_SeleniumTestCase {
 	/**
 	 * @test
 	 */
-	public function googleCanBeLoaded() {
+	public function runSeleneseOnOliverKleeDe() {
 		$this->runSelenese(__DIR__ . '/Selenese/oliverklee.de.html');
 	}
 }
