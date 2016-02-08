@@ -1,5 +1,7 @@
 # Selenium demo
 
+[![Flattr this git repo](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=45y2xw&url=https%3A%2F%2Fgithub.com%2Foliverklee%2Fselenium-demo)
+
 This is a short demo for Selenium with PHPUnit used at Oliver Klee's workshops.
 
 
