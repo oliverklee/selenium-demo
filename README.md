@@ -1,6 +1,11 @@
 # Selenium demo
 
-[![Flattr this git repo](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=45y2xw&url=https%3A%2F%2Fgithub.com%2Foliverklee%2Fselenium-demo)
+[![Build Status](https://travis-ci.org/oliverklee/selenium-demo.svg?branch=master)](https://travis-ci.org/oliverklee/selenium-demo)
+[![Latest Stable Version](https://poser.pugx.org/oliverklee/selenium-demo/v/stable.svg)](https://packagist.org/packages/oliverklee/selenium-demo)
+[![Total Downloads](https://poser.pugx.org/oliverklee/selenium-demo/downloads.svg)](https://packagist.org/packages/oliverklee/selenium-demo)
+[![Latest Unstable Version](https://poser.pugx.org/oliverklee/selenium-demo/v/unstable.svg)](https://packagist.org/packages/oliverklee/selenium-demo)
+[![License](https://poser.pugx.org/oliverklee/selenium-demo/license.svg)](https://packagist.org/packages/oliverklee/selenium-demo)
+
 
 This is a short demo for Selenium with PHPUnit used at Oliver Klee's workshops.
 
