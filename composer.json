@@ -35,5 +35,8 @@
         "psr-4": {
             "OliverKleeDe\\SeleniumDemo\\Tests\\": "Tests/"
         }
+    },
+    "scripts": {
+        "php-lint": "find Tests/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
     }
 }
