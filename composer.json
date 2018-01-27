@@ -38,14 +38,19 @@
     },
     "scripts": {
         "ci:php:lint": "find Tests/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+        "ci:tests:selenium": "phpunit Tests/Selenium/",
         "ci:tests": [
             "@ci:tests:selenium"
         ],
         "ci:static": [
             "@ci:php:lint"
         ],
+        "ci:dynamic": [
+            "@ci:tests"
+        ],
         "ci": [
-            "@ci:static"
+            "@ci:static",
+            "@ci:dynamic"
         ]
     }
 }
